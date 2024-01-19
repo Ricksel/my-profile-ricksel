@@ -1,0 +1,194 @@
+header {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* BLANK SPACES =============================================================================================================*/
+
+.blank{
+    background-color: white;
+}
+
+.bottom {
+    background-color: rgb(34, 34, 34);
+}
+
+/* NAVIGATION BAR ==========================================================================================================*/
+ul.navigation_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #414141;
+}
+
+.active {
+    background-color: #414141;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*========================================================================================================== */
+
+/* FEATURE VIDEOS ===========================================================================================*/
+
+
+.videos {
+  z-index: 1;
+}
+
+.videos:hover {
+background-color: rgba(0, 0, 0, 0.911);
+color: white;
+}
+
+.features {
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+  
+.feature_videos {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+  
+.slides label {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+  
+  /* Show active slide */
+#slide1:checked ~ .feature_videos {
+    transform: translateX(0);
+}
+  
+#slide2:checked ~ .feature_videos {
+    transform: translateX(-100%);
+}
+
+#slide1:checked ~ .nav label:nth-child(1), #slide2:checked ~ .nav label:nth-child(2) {
+    background-color: #333;
+}
+
+/* DRAWINGS ======================================================================================================================= */
+
+.drawings {
+  z-index: 1;
+}
+
+.drawings:hover {
+background-color: rgba(0, 0, 0, 0.911);
+color: white;
+}
+
+.featured {
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  margin: auto;
+}
+
+/* BOOKS ======================================================================================================================= */
+
+
+.collections {
+  z-index: 1;
+}
+
+.collections:hover {
+background-color: rgba(0, 0, 0, 0.911);
+color: white;
+}
+
+.featured_books {
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+div.books {
+  margin: 5px;
+  border: 1px solid #000000;
+  float: left;
+  width: 180px;
+}
+
+div.books:hover {
+  border: 1px solid #777;
+}
+
+div.books img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  background-color: #000000;
+  color: white;
+}
